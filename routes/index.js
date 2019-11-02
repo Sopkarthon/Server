@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 router.use('/boards', require('./boards'));
-router.use('/costumes', require('./costumes'));
 router.use('/likes', require('./likes'));
 router.use('/ranks', require('./ranks'));
 router.use('/users', require('./users'));
