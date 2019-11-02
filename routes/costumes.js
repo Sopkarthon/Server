@@ -8,12 +8,12 @@ const Costume = require('../model/costume');
 /* POST costumes location. */
 
 router.put('/', (req, res) => {
-  const {costumeIdx, lng, lat} = req.body;
+  const {userIdx, lng, lat} = req.body;
 
   // 파라미터 오류
-  if(!costumeIdx || ! lng || !lat) {
+  if(!userIdx || ! lng || !lat) {
 
-      const missParameters = Object.entries({costumeIdx, lng, lat})
+      const missParameters = Object.entries({userIdx, lng, lat})
       .filter(it => it[1] == undefined).map(it => it[0]).join(',')
 
       res.status(statusCode.BAD_REQUEST)
@@ -21,24 +21,13 @@ router.put('/', (req, res) => {
       return;
   }
 
-  //
-
-  Costume.costumeLoc(costumeIdx, lng, lat)
+  Costume.costumeLoc(userIdx, lng, lat)
   .then(({code, json}) => res.status(code).send(json))
   .catch((err) => {
       console.log(err);
       res.status(statusCode.INTERNAL_SERVER_ERROR)
       .send(responseMessage.INTERNAL_SERVER_ERROR);
   });
-
-  // Costume.selectAll()
-  // .then(({code, json}) => res.status(code).send(json))
-  // .catch((err) => {
-  //     console.log(err);
-  //     res.status(statusCode.INTERNAL_SERVER_ERROR)
-  //     .send(responseMessage.INTERNAL_SERVER_ERROR);
-  // });
-
 });
 
 module.exports = router;
