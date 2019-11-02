@@ -4,6 +4,6 @@ const dbConfig = {
     port: 3306, 
     user: 'admin', 
     password: 'young0327', 
-    database: 'sopt', 
+    database: 'sopkathon', 
     dateStrings: 'date', }
 module.exports = mysql.createPool(dbConfig)
