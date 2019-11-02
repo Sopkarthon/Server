@@ -3,6 +3,7 @@ var router = express.Router();
 
 router.use('/boards', require('./boards'));
 router.use('/likes', require('./likes'));
+router.use('/costumes', require('./costumes'));
 router.use('/ranks', require('./ranks'));
 router.use('/users', require('./users'));
 
