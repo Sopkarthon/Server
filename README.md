@@ -10,9 +10,9 @@
 ## 앱 디자인
 
 ## 개발자
-__ Server 양승희__
+Server **양승희** [seunghee63](https://github.com/seunghee63)
 <br>
-__ Server 최영훈__
+Server **최영훈** [dudgns3tp](https://github.com/cdudgns3tp)
 
 
 
