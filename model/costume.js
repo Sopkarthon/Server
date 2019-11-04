@@ -13,7 +13,6 @@ module.exports = {
 
             const query0 = `SELECT costumeIdx FROM costume WHERE costumeIdx = ${userIdx}`;
             const costumeIdx = await pool.queryParam_None(query0);
-            let test = 0;
 
             if(costumeIdx[0] != null){
                 console.log(costumeIdx[0]);
@@ -30,7 +29,6 @@ module.exports = {
                     return;
                 }      
             }else{
-                test = 1;
                 console.log(costumeIdx[0]);
             }
 
@@ -40,8 +38,8 @@ module.exports = {
             // UPDATE 성공
             resolve({
                 code:statusCode.OK,
-                json:authUtil.successTrue("업데이트가 완료되었습니다.",{test, result}) 
-            });         
+                json:authUtil.successTrue("업데이트가 완료되었습니다.",{result}) 
+            });
 
         })
     }
