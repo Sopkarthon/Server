@@ -11,11 +11,9 @@
 
 
 ## 앱 디자인
-
-<img width="953" alt="title" src="https://user-images.githubusercontent.com/41153567/68129699-55eabf80-ff5d-11e9-9b51-79632c6d8acd.png">
-<img width="952" alt="home" src="https://user-images.githubusercontent.com/41153567/68129977-e7f2c800-ff5d-11e9-8837-38c5265676c3.png"><img width="957" alt="map" src="https://user-images.githubusercontent.com/41153567/68129642-3d7aa500-ff5d-11e9-8fb3-33ad63a46c79.png">
-<img width="953" alt="profile" src="https://user-images.githubusercontent.com/41153567/68129647-3f446880-ff5d-11e9-8be8-3868c86db5b2.png">
-
+<img width="952" alt="home" src="https://user-images.githubusercontent.com/41153567/68130128-2ab4a000-ff5e-11e9-8aaa-22b72a08c276.png">
+<img width="957" alt="map" src="https://user-images.githubusercontent.com/41153567/68130134-2c7e6380-ff5e-11e9-963d-a8b1323a09eb.png">
+<img width="953" alt="profile" src="https://user-images.githubusercontent.com/41153567/68130137-2e482700-ff5e-11e9-8c88-9230c0b0e5e1.png">
 
 
 ## 개발자
